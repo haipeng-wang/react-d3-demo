@@ -1,0 +1,77 @@
+.bar-chart .vertical-chart {
+  display: inline-block;
+  background-color: white;
+  width: 40%;
+}
+
+.bar-chart .horizontal-chart {
+  vertical-align: top;
+  display: inline-block;
+  background-color: white;
+  max-width: 40%;
+  margin-right: 100px;
+}
+
+.bar-chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.bar-chart .vertical-chart div {
+  width: 20px;
+  float: left;
+  text-align: center;
+}
+
+.enter-exit {
+  display: inline-block;
+}
+
+.enter-exit div {
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.enter-exit .enter-border {
+  width: 50%;
+  display: inline-block;
+  border: 1px solid yellowgreen;
+}
+
+.enter-exit .enter-border div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid yellowgreen;
+  margin: 15px;
+}
+
+.enter-exit .exit-border {
+  margin-top: 5px;
+  width: 50%;
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+.enter-exit .exit-border div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid blue;
+  margin: 15px;
+}
+
+
+.svg-chart rect {
+  fill: steelblue;
+}
+
+.svg-chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
