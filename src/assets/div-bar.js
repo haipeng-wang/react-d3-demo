@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import _ from 'underscore';
 import * as d3 from 'd3';
 
 export default class DivBarChart extends Component {
@@ -21,8 +20,6 @@ export default class DivBarChart extends Component {
       .data(this.data)
       .enter()
       .append('div')
-      .transition()
-      .duration(2000)
       .style('width', d => `${scale(d)}px`)
       .text(d => d);
 
@@ -32,17 +29,8 @@ export default class DivBarChart extends Component {
       .data(this.data)
       .enter()
       .append('div')
-      .transition()
-      .duration(2000)
       .style('height', d => `${scale(d)}px`)
       .text(d => d);
-  }
-
-  updateWidth(e) {
-    const width = parseInt(e.target.value, 10);
-    if (!_.isNaN(width)) {
-      this.setState({ width });
-    }
   }
 
   render() {
